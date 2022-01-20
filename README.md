@@ -15,3 +15,6 @@ SO THAT I can gauge my progress compared to my peers
   THEN the game is over  
   WHEN the game is over  
   THEN I can save my initials and score  
+
+
+#Placeholder for updates and scrrenshot
