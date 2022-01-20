@@ -2,3 +2,10 @@
     background-image: url(/assets/images/Huskies.jpg);
 } */
 
+.timer {
+    justify-content: right;
+}
+
+p {
+    text-decoration: blue;
+}

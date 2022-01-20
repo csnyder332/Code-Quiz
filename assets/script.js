@@ -9,6 +9,7 @@ var qanswer = document.querySelector('#answer');
 var pname = document.querySelector('#playername');
 var score = document.querySelector('#final-score');
 
+var testdata = document.querySelector('#choicesUl');
 
 //question objects for quiz
 var questlist = [
@@ -51,3 +52,13 @@ qchoices.removeAttribute("class");
 
 
 startBtn.onclick = startQuiz;
+
+$(document).ready(function(){
+    if (jQuery) {  
+      // jQuery is loaded  
+      alert("Yeah!");
+    } else {
+      // jQuery is not loaded
+      alert("Doesn't Work");
+    }
+ });
