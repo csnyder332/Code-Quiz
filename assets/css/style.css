@@ -91,16 +91,6 @@
 
  @media (max-width: 480px) {
     .husky {
-        display: none;
+        display: none; }
     }
-}
-@media (min-width: 481px) and (max-width: 1024px) {
-    body {
-        max-width: 1024px;
-    }
-}      
-    @media (min-width: 1025px) {
-        body {
-            min-width: 1025px;
-        }
-    }
+    
