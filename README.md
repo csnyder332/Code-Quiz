@@ -23,4 +23,4 @@ SO THAT I can gauge my progress compared to my peers
 
 Link to Github repository: https://github.com/csnyder332/Code-Quiz
 
-Link to live Website: 
+Link to live Website: https://csnyder332.github.io/Code-Quiz/
