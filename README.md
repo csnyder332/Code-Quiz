@@ -17,4 +17,3 @@ SO THAT I can gauge my progress compared to my peers
   THEN I can save my initials and score  
 
 
-#Placeholder for updates and scrrenshot

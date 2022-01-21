@@ -7,44 +7,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Husky Quiz!</title>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
 </head>
 
+
+<button url="Highscores.html" id="scores">High Scores</button>
+
 <body>
-    <button id="scores">High Scores</button>
+    
+    <div class="timer"><span id="currentTime"></span></div>
 
-    <div class="timer">Time: <span id="timeleft">0</span></div>
+    <div id="wrapper">
 
-    <div class="wrapper">
-        <div id="start-screen">
+        <div id="questionsDiv" class="questDiv">
             <h1>Husky Quiz!</h1>
-         
+
             <p>Welcome to the Husky quiz. Test your knowledge of Siberian Huskies!</p>
-            <button id="start">Start Quiz</button>
+
+            <button id="startTime">Start Quiz</button>
         </div>
 
         <ul id="choicesUl"></ul>
-            <div id="questions" class="hide"></div>
-            <div id="choices" class="hide"></div>
-            <div id="answer" class="hide"></div>
-        
 
-        <div class="gamedisplay">
-            <p>Final score: <span id="final-score"></span></p>
-            <p>Enter name: <input type="text" id="playername"></input>
-            </div>
+        <div id="results"></div>
 
-        <button id="submit">Submit</button>
-
-        <div id="results" class="results hide"></div>
-
-    
     </div>
-
-
-
-
-
+    <img src="./assets/images/husky.jpg" class="husky"></img>
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
