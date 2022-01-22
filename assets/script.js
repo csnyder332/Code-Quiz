@@ -5,6 +5,11 @@ var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var scores = document.querySelector("scores");
+var highScore = document.querySelector("#highScore");
+var clear = document.querySelector("#clearHighScore");
+var Reset = document.querySelector("#Reset");
+var HighScoresTable = document.querySelector("#HighScoresTable");
+
 
 var score = 0;
 var questIndex = 0;
@@ -45,9 +50,6 @@ var questlist = [
     },
 ];
 
-document.getElementById("scores").addEventListener("click", function () {
-    window.location.replace("HighScores.html");
-});
 
 timer.addEventListener("click", function () {
     if (holdInterval === 0) {
@@ -154,6 +156,7 @@ function finished() {
     createInput.textContent = "";
 
     questionsDiv.appendChild(createInput);
+    
 
    
     var createSubmit = document.createElement("button");
@@ -162,6 +165,7 @@ function finished() {
     createSubmit.textContent = "Submit";
 
     questionsDiv.appendChild(createSubmit);
+    
 
     createSubmit.addEventListener("click", function () {
         var initials = createInput.value;
@@ -185,10 +189,34 @@ function finished() {
             allScores.push(finalScore);
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
+
+
             
-            window.location.replace("HighScores.html");
-    
+            var allScores = localStorage.getItem("allScores");
+            allScores = JSON.parse(allScores);
+            
+            if (allScores !== null) {
+            
+                for (var i = 0; i < allScores.length; i++) {
+            
+                    var createLi = document.createElement("li");
+                    createLi.textContent = allScores[i].initials + " " + allScores[i].score;
+                    highScore.appendChild(createLi);
+                    
+            
+                }
+            }
+          
         }
+    });
+    
+    clear.addEventListener("click", function () {
+        localStorage.clear();
+        location.reload();
+    });
+
+    Reset.addEventListener("click", function () {
+        location.reload();
     });
 
     

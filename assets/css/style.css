@@ -10,7 +10,8 @@
 
 #currentTime {
     font-size: 50px;
-    position: absolute;
+    position: flex;
+    justify-content: flex-end;
     top: 0;
     right: 0;
     margin-top: 15px;
@@ -58,17 +59,9 @@
      font-size: x-large;
  }
 
- .husky {
-    position: flex;
-    max-width: 50%;
-    margin-top: 30px;
-    margin-left: 43%;
-    
-
- }
 
  #startTime {
-    cursor: pointer;
+   
     cursor: pointer;
     color: black;
     padding: 15px 32px;
@@ -79,8 +72,7 @@
  }
 
  #Submit {
-     cursor: pointer;
-     cursor: pointer;
+     
     cursor: pointer;
     color: black;
     text-align: center;
@@ -89,8 +81,34 @@
     font-size: 16px;
  }
 
- @media (max-width: 480px) {
-    .husky {
-        display: none; }
-    }
+ #HighScoresTable {
+    position: flex;
+    max-width: 50%;
+    margin-left: 25%;
+    border: 5px solid black;
+    text-align: center;
+    background-color: rgb(199, 195, 195);
+ } 
+
+ #Reset {
+    cursor: pointer;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+
+ #clearHighScore {
+  cursor: pointer;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
+
     
