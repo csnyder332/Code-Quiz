@@ -59,7 +59,8 @@ timer.addEventListener("click", function () {
 
             if (secondsLeft <= 0) {
                 clearInterval(holdInterval);
-                allDone();
+                //allDone();
+                location.reload();
                 currentTime.textContent = 'Out of time!';
             }
         }, 1000);
