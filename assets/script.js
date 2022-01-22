@@ -46,7 +46,7 @@ var questlist = [
 ];
 
 document.getElementById("scores").addEventListener("click", function () {
-    window.open("./Highscores.html");
+    window.location.replace("HighScores.html");
 });
 
 timer.addEventListener("click", function () {
