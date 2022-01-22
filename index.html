@@ -9,13 +9,14 @@
 
 
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/HighScores.css">
 </head>
 
 
 <button id="scores">High Scores</button>
 
 <body>
-    <container class="quiztable">
+    
     <div class="timer"><span id="currentTime"></span></div>
 
     <div id="wrapper">
@@ -33,12 +34,26 @@
         <div id="results"></div>
         
     </div>
-    <img src="./assets/images/husky.jpg" class="husky" size=></img>
-    </container>
+
+
+
+    <div id=HighScoresTable class=HighTable>
+        <h1>Highest Scores!</h1>
+            <ul id="highScore"></ul>
+
+        
+            <button id="clearHighScore" value="reset">Clear Scores</button>
+    </div>
+
+
+
+
+    
 
 
     <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
     <script src="assets/script.js"></script>
+    <script src="./assets/HighScores.js"></script>
 </body>
 
 </html>

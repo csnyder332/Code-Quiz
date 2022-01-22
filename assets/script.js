@@ -5,6 +5,10 @@ var currentTime = document.querySelector("#currentTime");
 var timer = document.querySelector("#startTime");
 var questionsDiv = document.querySelector("#questionsDiv");
 var scores = document.querySelector("scores");
+var highScore = document.querySelector("#highScore");
+var clear = document.querySelector("#clearHighScore");
+var goBack = document.querySelector("#back");
+var HighScoresTable = document.querySelector("#HighScoresTable");
 
 var score = 0;
 var questIndex = 0;
@@ -46,7 +50,7 @@ var questlist = [
 ];
 
 document.getElementById("scores").addEventListener("click", function () {
-    window.location.replace("HighScores.html");
+    document.replace("HighScoresTable");
 });
 
 timer.addEventListener("click", function () {
@@ -186,10 +190,28 @@ function finished() {
             var newScore = JSON.stringify(allScores);
             localStorage.setItem("allScores", newScore);
             
-            window.location.replace("HighScores.html");
+            document.replace("HighScoresTable");
     
         }
     });
-
+    
+    var allScores = localStorage.getItem("allScores");
+    allScores = JSON.parse(allScores);
+    
+    if (allScores !== null) {
+    
+        for (var i = 0; i < allScores.length; i++) {
+    
+            var createLi = document.createElement("li");
+            createLi.textContent = allScores[i].initials + " " + allScores[i].score;
+            highScore.appendChild(createLi);
+    
+        }
+    }
+    
+    clear.addEventListener("click", function () {
+        localStorage.clear();
+        location.reload();
+    });
     
 }

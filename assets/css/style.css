@@ -89,6 +89,35 @@
     font-size: 16px;
  }
 
+ #HighScoresTable {
+    position: flex;
+    max-width: 50%;
+    margin-left: 25%;
+    border: 5px solid black;
+    text-align: center;
+    background-color: rgb(199, 195, 195);
+ } 
+
+ #back {
+    cursor: pointer;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+ }
+
+ #clearHighScore {
+  cursor: pointer;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+ }
+
  @media (max-width: 480px) {
     .husky {
         display: none; }
