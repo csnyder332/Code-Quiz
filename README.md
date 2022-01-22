@@ -18,7 +18,8 @@ SO THAT I can gauge my progress compared to my peers
    WHEN the game is over  
   THEN I can save my initials and score  
 
-![image](https://user-images.githubusercontent.com/95385092/150600664-30c67c43-03fd-4957-a23b-3a732025d19a.png)
+![image](https://user-images.githubusercontent.com/95385092/150652606-f22d5b49-5090-4b87-9166-095a789a004d.png)
+
 
 
 Link to Github repository: https://github.com/csnyder332/Code-Quiz
